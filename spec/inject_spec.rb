@@ -40,7 +40,7 @@ describe 'How inject works' do
   context 'division' do
 
     it 'returns 0 for an array with 1,2' do
-      expect([1,2].my_inject{ |x,y| x / y }).to eq 0
+      expect([1,2].my_inject{ |x,y| x / y }).to eq 1
     end
 
     it 'returns 0 for an array 1,2 with initial value of 1' do
@@ -49,9 +49,12 @@ describe 'How inject works' do
 
   end
 
+context 'addition of string'
+  
+  it "returns HelloThere for array Hello there" do
+    expect(["Hello", "There"].my_inject{|x, y| x + y}).to eq "HelloThere"
   end
 
-
-
+end
 
 end
