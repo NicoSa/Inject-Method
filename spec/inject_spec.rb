@@ -1,4 +1,4 @@
-require 'inject'
+  require 'inject'
 
 describe 'How inject works' do
 

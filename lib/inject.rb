@@ -1,11 +1,8 @@
 class Array
 
   def my_inject(*initial_value)
-    array = initial_value + self
-    acc, *tail = array
-    tail.each do |val|
-      acc = yield(acc, val)
-    end
+    acc, *tail = (initial_value + self)
+    tail.each { |val| acc = yield(acc, val) }
     acc
   end
 
